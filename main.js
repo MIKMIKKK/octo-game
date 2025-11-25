@@ -150,15 +150,15 @@ resetTimerBtn.addEventListener('click', () => {
 // --- Card Logic ---
 // 3 designs per category
 const questionFaces = [
-  '/assets/card_face_1.png',
-  '/assets/card_face_2.png',
-  '/assets/card_face_3.png'
+  './assets/card_face_1.png',
+  './assets/card_face_2.png',
+  './assets/card_face_3.png'
 ];
 
 const beneficialFaces = [
-  '/assets/card_face_3.png', // Shared design
-  '/assets/card_face_4.png',
-  '/assets/card_face_5.png'
+  './assets/card_face_3.png', // Shared design
+  './assets/card_face_4.png',
+  './assets/card_face_5.png'
 ];
 
 function drawCard(type) {

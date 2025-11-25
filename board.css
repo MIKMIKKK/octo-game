@@ -100,7 +100,7 @@ body {
 #board {
     width: 800px;
     height: 800px;
-    background-image: url('/assets/board/wood_texture.png');
+    background-image: url('./assets/board/wood_texture.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -288,12 +288,12 @@ body {
 }
 
 /* Cube Faces Construction - TranslateZ = width/2 = 40px */
-.face-1 { transform: rotateY(0deg) translateZ(40px); background-image: url('/assets/dice/face_1.svg'); }
-.face-2 { transform: rotateY(90deg) translateZ(40px); background-image: url('/assets/dice/face_2.svg'); }
-.face-3 { transform: rotateY(180deg) translateZ(40px); background-image: url('/assets/dice/face_3.svg'); }
-.face-4 { transform: rotateY(-90deg) translateZ(40px); background-image: url('/assets/dice/face_4.svg'); }
-.face-5 { transform: rotateX(90deg) translateZ(40px); background-image: url('/assets/dice/face_5.svg'); }
-.face-6 { transform: rotateX(-90deg) translateZ(40px); background-image: url('/assets/dice/face_6.svg'); }
+.face-1 { transform: rotateY(0deg) translateZ(40px); background-image: url('./assets/dice/face_1.svg'); }
+.face-2 { transform: rotateY(90deg) translateZ(40px); background-image: url('./assets/dice/face_2.svg'); }
+.face-3 { transform: rotateY(180deg) translateZ(40px); background-image: url('./assets/dice/face_3.svg'); }
+.face-4 { transform: rotateY(-90deg) translateZ(40px); background-image: url('./assets/dice/face_4.svg'); }
+.face-5 { transform: rotateX(90deg) translateZ(40px); background-image: url('./assets/dice/face_5.svg'); }
+.face-6 { transform: rotateX(-90deg) translateZ(40px); background-image: url('./assets/dice/face_6.svg'); }
 
 @keyframes floatDice {
   0%, 100% { transform: translateY(0) rotateX(-20deg) rotateY(-30deg); }
@@ -344,7 +344,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background-image: url('/assets/board/gold_record.png');
+    background-image: url('./assets/board/gold_record.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -375,7 +375,7 @@ body {
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url('/assets/board/token.png');
+    background-image: url('./assets/board/token.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 20;
@@ -397,7 +397,7 @@ body {
     height: 80px;
     bottom: 50px;
     left: 50px;
-    background-image: url('/assets/board/compass.png');
+    background-image: url('./assets/board/compass.png');
     background-size: contain;
 }
 
