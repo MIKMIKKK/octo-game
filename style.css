@@ -195,6 +195,28 @@ main {
   transform: rotateX(0) rotateY(0) !important; /* Reset scene rotation so cube rotation is absolute */
 }
 
+/* Dice result display */
+.dice-result {
+  margin-top: 0.75rem;
+  min-width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  background: rgba(0,0,0,0.6);
+  border: 2px solid rgba(212,175,55,0.2);
+  border-radius: 6px;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.dice-result.show-result {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 /* Timer */
 .timer-container {
   background: black;
