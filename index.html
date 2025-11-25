@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Octahedral Destiny</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>PIRATE'S DESTINY</h1>
+        <button id="rules-btn" class="btn-secondary">Captain's Rules</button>
+      </header>
+
+      <main>
+        <section class="game-area">
+          <div class="dice-container">
+            <div class="scene">
+              <div class="cube" id="dice">
+                <div class="face face-1"></div>
+                <div class="face face-2"></div>
+                <div class="face face-3"></div>
+                <div class="face face-4"></div>
+                <div class="face face-5"></div>
+                <div class="face face-6"></div>
+              </div>
+            </div>
+            <button id="roll-btn" class="btn-primary">Roll the Dice</button>
+          </div>
+
+          <div class="timer-container">
+            <div class="timer-display" id="timer">00:00</div>
+            <div class="timer-controls">
+              <button id="start-timer" class="btn-icon">▶</button>
+              <button id="stop-timer" class="btn-icon">⏸</button>
+              <button id="reset-timer" class="btn-icon">↺</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="cards-area">
+          <div class="deck-container">
+            <h2>Questions</h2>
+            <div class="card-slot" id="deck-question">
+              <div class="card-back piraterie-back">
+                <div class="logo-92i">92i</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="active-card-display" id="active-card-area">
+            <div class="card-placeholder">Draw a card</div>
+          </div>
+
+          <div class="deck-container">
+            <h2>Beneficial</h2>
+            <div class="card-slot" id="deck-beneficial">
+              <div class="card-back futur-back">
+                <div class="logo-futur">FUTUR</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Rules Modal -->
+      <div id="rules-modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Captain's Rules</h2>
+          <div class="rules-container">
+            <h3>OBJECTIVE</h3>
+            <p>Be the first to reach the <strong>Final Square</strong>.</p>
+
+            <h3>TURN SEQUENCE</h3>
+            <ol>
+              <li>Roll the <strong>D6</strong>.</li>
+              <li>Move forward.</li>
+              <li>Apply the square's effect.</li>
+            </ol>
+
+            <h3>SQUARE TYPES</h3>
+            <ul>
+              <li><strong>EMPTY:</strong> No effect.</li>
+              <li><strong>QUIZ:</strong> Answer a question (Marketing, Digital Creation, Web Dev).
+                <ul>
+                  <li><strong>Correct:</strong> Draw 1 Bonus Card.</li>
+                  <li><strong>Wrong:</strong> Move back 1 square.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3>BONUS CARDS</h3>
+            <ul>
+              <li><strong>BOOST:</strong> Move forward, roll again, etc.</li>
+              <li><strong>PROTECTION:</strong> Cancel penalties.</li>
+              <li><strong>ASSET:</strong> Strategic advantages.</li>
+              <li><strong>PENALTY:</strong> Attack opponents.</li>
+              <li><strong>DUEL:</strong> Defend against penalties.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
